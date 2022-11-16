@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Mybg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart{
+    width: 90px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.btn {
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 32px;
+}
+.btn-1{
+    background: #7d92bb;
+    color: #fff;
+    border-radius: 30px;
+    transition: transform 0,3s ease;
+}
+.btn-1::after, .btn-1::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #232d60;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: tranform 0.3 ease;
+}
+
+.btn-1:hover{
+    transform: translate(-12px, -12px);
+}
+.btn-1:hover::after{
+    transform: translate(6px, 6px);
+}
+.btn-1:hover::before{
+    transform: translate(12px, 12px);
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p{
+    font-size: 20px;
+    color: #6A7199;
+}
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #dcdfe4, #948f92);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 8px 22px rgba(94,28, 68, 0.15);
+}
+.arrow-icons {
+    margin-top: 40;
+    display: flex;
+}
+.arrow-icons img{
+    height: 200px;
+    width: 160px;
+    margin-right: 10px;
+}
+.picture-img {
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+.social-links {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social-links a{
+    text-decoration: none;
+    color: #6A7199;
+    padding-right: 20px;
+    font-size: 14px;
+}
+/*Hobbies*/
+.games{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bggames.png);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(253, 1, 1);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.games-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+h3{
+    color: #fff;
+}
+.games-col img{
+    width: 90%;
+}
+.games-coll{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.games-coll img{
+    width: 100%;
+}
+.games-cool{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.games-cool img{
+    width: 130%;
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/*Music*/
+html{
+    font-size: 62.5%;
+}
+.song{
+    background: #222;
+    background-size: cover;
+    background-position: center;
+}
+.song .headling {
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0 .5rem 1rem #000;
+    color: #fff;
+}
+.song .music-song {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.song .music-song .box {
+    height: 16rem;
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    background-color: #7d92bb;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+.song .music-song .box .image{
+    height: 100%;
+    width: 25%;
+}
+.song .music-song .box .image img{
+    height: 100%;
+    width: 100%;
+}
+.song .music-song .box .music{
+    width: 75%;
+}
+.song .music-song .box .music audio{
+    width: 100%;
+    outline: none;
+}
+.song .music-song .box .music audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+.music p{
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
